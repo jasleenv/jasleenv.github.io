@@ -1,3 +1,5 @@
+/* Consider using grid to layout your projects section! */
+
 
 body {
     margin: 0;
@@ -12,6 +14,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+/*   You don't need to set 'right' if you've set 'left'.   */
     right: 0;
     height: 50px;
     line-height: 50px;
@@ -31,6 +34,7 @@ header li {
     margin-left: 20px;
 }
 
+/* since each section tag has a single child element inside it, flexbox isn't too necessary here.*/
 section {
     height: auto;
     border: 1px solid black;
@@ -45,7 +49,7 @@ section {
     background-repeat: no-repeat; 
     background-attachment: fixed; 
 }
-
+/*  Consider giving this a margin-top to create some space between the prof pic and nav bar */
 #hero .profile-img {
     width: 300px;
     border-radius: 50%;
